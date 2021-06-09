@@ -21,8 +21,13 @@ module.exports = {
       colors: {
         highlight: withOpacity('--color-highlight'),
         'background-primary': withOpacity('--color-background-primary'),
+        'background-alt': withOpacity('--color-background-alt'),
         'accent-text': withOpacity('--color-accent-text'),
         'accent-text-muted': withOpacity('--color-accent-text-muted'),
+        text: withOpacity('--color-text'),
+        'text-muted': withOpacity('--color-text-muted'),
+        muted: withOpacity('--color-muted'),
+        link: withOpacity('--color-link'),
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
