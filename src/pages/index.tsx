@@ -1,4 +1,5 @@
-import { GoGrabber } from 'react-icons/go';
+import { GoGrabber, GoFileCode, GoLink } from 'react-icons/go';
+import { BsChatDots } from 'react-icons/bs';
 
 const IndexPage = () => (
   <>
@@ -72,6 +73,20 @@ const IndexPage = () => (
         <div className="h-4 w-4 flex-none rounded-full bg-muted shadow-md" />
         <div className="h-4 w-4 flex-none rounded-full bg-muted shadow-md" />
         <div className="h-4 w-4 flex-none rounded-full bg-muted shadow-md" />
+      </div>
+    </div>
+    <div className="bg-background-alt py-4 flex justify-around">
+      <div className="flex flex-col items-center">
+        <GoFileCode className="h-6 text-text" />
+        <p className="text-text font-bold text-sm">BLOG</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <GoLink className="h-6 text-text" />
+        <p className="text-text font-bold text-sm">RESOURCES</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <BsChatDots className="h-6 text-text" />
+        <p className="text-text font-bold text-sm">CONTACT</p>
       </div>
     </div>
   </>
