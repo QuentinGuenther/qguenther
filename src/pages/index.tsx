@@ -2,7 +2,7 @@ import { GoGrabber, GoFileCode, GoLink } from 'react-icons/go';
 import { BsChatDots } from 'react-icons/bs';
 
 const IndexPage = () => (
-  <div className="flex flex-col h-screen">
+  <div className="flex flex-col h-screen overflow-hidden overscroll-none">
     <div className="flex-grow backdrop-filter backdrop-blur-sm bg-hero-pattern bg-cover bg-no-repeat bg-left-top h-72">
       <div className="w-full h-full gradient relative">
         <div className="flex justify-between px-6 pt-10 w-full">
@@ -26,7 +26,7 @@ const IndexPage = () => (
         <h1 className="block text-3xl text-accent-text">Recent Posts</h1>
         <a className=" block text-link text-sm font-bold bullet">Go to Blog</a>
       </div>
-      <div className="flex flex-row gap-x-5 overflow-x-auto overscroll-contain scrollbar-none">
+      <div className="flex space-x-5 overflow-x-auto overscroll-contain scrollbar-none">
         <div className="ml-6 bg-background-alt w-64 h-64 px-6 py-4 flex justify-between flex-col flex-none shadow-lg">
           <div>
             <h2 className="text-accent-text-muted text-2xl">README.md</h2>
@@ -68,7 +68,7 @@ const IndexPage = () => (
           </p>
         </div>
       </div>
-      <div className="flex flex-row gap-3 align-middle justify-items-center justify-center">
+      <div className="flex flex-row space-x-3 align-middle justify-items-center justify-center">
         <div className="h-4 w-4 flex-none rounded-full bg-highlight shadow-md" />
         <div className="h-4 w-4 flex-none rounded-full bg-muted shadow-md" />
         <div className="h-4 w-4 flex-none rounded-full bg-muted shadow-md" />
