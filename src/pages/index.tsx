@@ -1,5 +1,6 @@
 import { GoGrabber, GoFileCode, GoLink } from 'react-icons/go';
 import { BsChatDots } from 'react-icons/bs';
+import { BlogCarousel } from '../components/modules';
 
 const IndexPage = () => (
   <div className="green flex flex-col h-screen overflow-hidden overscroll-none">
@@ -26,54 +27,7 @@ const IndexPage = () => (
         <h1 className="block text-3xl text-accent">Recent Posts</h1>
         <a className=" block text-link text-sm font-bold bullet">Go to Blog</a>
       </div>
-      <div className="flex space-x-5 overflow-x-auto overscroll-contain scrollbar-none">
-        <div className="ml-6 bg-alt w-64 h-64 px-6 py-4 flex justify-between flex-col flex-none shadow-lg">
-          <div>
-            <h2 className="text-accent-alt text-2xl">README.md</h2>
-            <p className="text-muted text-sm">Jan 1, 1970</p>
-          </div>
-          <p className="text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div className="bg-alt w-64 h-64 px-6 py-4 flex justify-between flex-col flex-none shadow-lg">
-          <div>
-            <h2 className="text-accent-alt text-2xl">README.md</h2>
-            <p className="text-muted text-sm">Jan 1, 1970</p>
-          </div>
-          <p className="text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div className="bg-alt w-64 h-64 px-6 py-4 flex justify-between flex-col flex-none shadow-lg">
-          <div>
-            <h2 className="text-accent-alt text-2xl">README.md</h2>
-            <p className="text-muted text-sm">Jan 1, 1970</p>
-          </div>
-          <p className="text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div className="bg-alt w-64 h-64 px-6 py-4 flex justify-between flex-col flex-none shadow-lg">
-          <div>
-            <h2 className="text-accent-alt text-2xl">README.md</h2>
-            <p className="text-muted text-sm">Jan 1, 1970</p>
-          </div>
-          <p className="text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-row space-x-3 align-middle justify-items-center justify-center">
-        <div className="h-4 w-4 flex-none rounded-full bg-selected shadow-md" />
-        <div className="h-4 w-4 flex-none rounded-full bg-unselected shadow-md" />
-        <div className="h-4 w-4 flex-none rounded-full bg-unselected shadow-md" />
-        <div className="h-4 w-4 flex-none rounded-full bg-unselected shadow-md" />
-      </div>
+      <BlogCarousel />
     </div>
     <div className="flex-none bg-alt py-4 flex justify-around">
       <div className="flex flex-col items-center">
